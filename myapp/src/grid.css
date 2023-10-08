@@ -166,9 +166,8 @@ body {
         display: grid;
         width: 375px;
         height: 556px;
-        margin-left: 2%;
-        padding-left: 0%;
-        padding-right: 0%;
+        margin: auto;
+       
         background-color: white;
         padding-top: 5%;
         margin-top: 3%;
