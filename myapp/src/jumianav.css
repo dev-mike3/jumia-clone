@@ -1,0 +1,284 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navi{
+  display: flex;
+  background-color: rgb(243, 243, 243);
+  margin-top: 0vw;
+  width: fit-content;
+}
+.contain{
+  width: 100vw;
+  margin-right: 0%;
+  padding-right: 0%;
+}
+.nav{
+  padding-left: 380px;
+  padding-top: -7%;
+  justify-content: space-between;
+  
+
+}
+
+.gift{
+  width: inherit;
+}
+.sell{
+  padding-left: 4vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #f68b1e;
+  cursor: pointer;
+}
+.navbar{
+  padding-top: 0vh;
+  display: flex;
+  padding-bottom: -4vh;
+  margin-top: 0vh;
+}
+.gif{
+  margin-top: -1%;
+  margin-left: -1%;
+  min-width: 100vw;
+  width: inherit;
+}
+.items{
+  margin-left: 5%;
+  color: rgb(190, 190, 190);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+}
+.item{
+  margin-left: 5%;
+  color: rgb(190, 190, 190);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+}
+.items:hover{
+  color: #f68b1e;
+}
+.item:hover{
+  color: rgb(115, 115, 248);
+}
+.jumia{
+  padding-left: -10000vw;
+}
+.search{
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 2%;
+  margin-top: 2px;
+  display: flex;
+  margin-top:1.3% ;
+  margin-right: -6px;
+  margin-left: -6px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.tab{
+  padding-left: 5%;
+}
+.searchbtn{
+  padding-left: 5%;
+}
+.tabi{
+  padding-left: 5%;
+  font-size: 200%;
+  font-weight: 650;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: -6%;
+  margin-left: 1.5%;
+}
+.textarea{
+  padding-left: 5%;
+  margin-top: 0.1vw;
+  width: 270%;
+  height: 90%;
+  margin-left: -160%;
+  border-radius: 5px;
+  border-width: 0.000002vw;
+}
+
+
+.smalltext{
+  padding-left: 0%;
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0.1vw;
+  height: 90%;
+  border-radius: 5px;
+  border-width: 0.000002vw;
+}
+button{
+  color: white;
+  background-color: #f68b1e;
+  padding: 25%;
+  border: none;
+  border-radius: 5px;
+  margin-left: 45%;
+  cursor: pointer;
+}
+.find{
+  display: flex;
+  margin-left: 20%;
+}
+.user{
+  margin-right: 7%;
+  padding-right: 10%;
+}
+.acc{
+  margin-bottom: 1000%;
+  padding-left: 10%;
+  justify-content: space-between;
+  
+}
+.env{
+  padding-left: 0.5%;
+}
+.span{
+  padding-top: 10%;
+  margin-left: -80%;
+}
+.gif{
+  padding-right: 0%;
+}
+.container {
+  display: grid;
+  width: 1200px;
+  height: 600px;
+  margin-left: 4%;
+  padding-top: 1.1%;
+  margin-bottom: -28vh;
+ 
+  grid-template-areas:
+    "header nav main"
+    "header  nav footer";
+    
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.container > header {
+  grid-area: header;
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+  width: 78%;
+  border-radius: 5px;
+  
+}
+
+.container   > nav {
+  grid-area: nav;
+  background-image: url(./assets/Slider.jpg);
+  margin-left: 2%;
+  border-radius: 5px;
+  margin-left: -8%;
+}
+
+.container   > main {
+  grid-area: main;
+  background-image: url(./assets/store.jpg);
+  margin-left: 3%;
+  border-radius: 5px;
+}
+
+.container   > footer {
+  grid-area: footer;
+  background-image: url(./assets/JForce.jpg);
+  margin-left: 3%;
+  margin-top: 3%;
+  border-radius: 5px;
+  
+  
+}
+.list{
+  padding-bottom: 6.5%;
+  padding-left: 4%;
+}
+
+ /* set the box for the slides */
+ .parent { height: 230px; width: 3px; overflow: visible;}
+ /* set height and width for slide elements */
+ .element {float: left; height: 230px; width: 600px; background-color: gray; }
+ /* set the width of the slides div and animation. */
+ .slides {width: calc(1800px * 4); animation: slideShow 10s ease infinite;}
+ img {width: 100%; height: 100%;}
+ /* creating the animation for the slideshow */
+ /* for more slides, users can take percentages accordingly. */
+ @keyframes slideShow {
+    20% {margin-left: 0px;}
+    40% {margin-left: calc(-716px * 1);}
+    60% {margin-left: calc(-716px * 2);}
+    80% {margin-left: calc(-716px * 3);}
+ }
+
+@media screen and (max-width: 600px) {
+ 
+  .navbar{
+    display: none;
+  }
+  .searchbtn{
+    display: none;
+  }
+  #help{
+    display: none;
+  }
+  #account{
+    display: none;
+  }
+  #cart{
+    display: none;
+  }
+  .tabi{
+    font-size: 90%;
+  }
+  .bigSearch{
+    display: none;
+  }
+  .container{
+    display: none;
+  }
+  .gif{
+    display: none;
+  }
+  .smalltext{
+    height: 120%;
+    margin-bottom: 5%;
+    width: 170%;
+    margin-left: -35%;
+    margin-right: -25%;
+    border-radius: 40px;
+    padding-right: 35px;
+    padding-left: 20px;
+    
+  }
+  .call{
+    text-align: center;
+    margin-top: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #FEE2CC;
+  }
+  
+ 
+}
+@media screen and (min-width: 768px) {
+  .contain{
+    width: 100%;
+  }
+.smallSearch{
+    display: none;
+  }
+
+  .gift{
+    display: none;
+  }
+  .parent{
+    display: none;
+  }
+}
+

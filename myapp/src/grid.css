@@ -1,0 +1,308 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+}
+
+body {
+    background-color: rgb(247, 244, 244);
+}
+
+.goods {
+    display: grid;
+    width: 1200px;
+    height: 326px;
+    margin-left: 4%;
+    padding-left: 1%;
+    padding-right: 0%;
+    background-color: white;
+    padding-top: 1%;
+
+    grid-template-areas:
+        "main header nav footer cam fish"
+        "cow dog car jeep laptop phone";
+
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.goods>main {
+    grid-area: main;
+    background-color: white;
+    height: 151px;
+    width: 145px;
+}
+
+.goods>header {
+    grid-area: header;
+    height: 151px;
+    width: 145px;
+    background-color: white;
+
+}
+
+.goods>nav {
+    grid-area: nav;
+    background-color: white;
+    width: 78%;
+    border-radius: 1px;
+    height: 151px;
+    width: 145px;
+}
+
+.goods>footer {
+    grid-area: footer;
+    background-color: white;
+    width: 78%;
+    border-radius: 1px;
+    height: 151px;
+    width: 145px;
+    border-radius: 9px;
+}
+
+.goods>cam {
+    grid-area: cam;
+    background-color: white;
+    width: 78%;
+    border-radius: 1px;
+    height: 151px;
+    width: 145px;
+    border-radius: 9px;
+}
+
+.goods>fish {
+    grid-area: fish;
+    background-color: white;
+    width: 78%;
+    border-radius: 1px;
+    height: 151px;
+    width: 145px;
+    border-radius: 9px;
+}
+
+.goods>cow {
+    grid-area: cow;
+    background-color: white;
+    width: 78%;
+    border-radius: 1px;
+    height: 151px;
+    width: 145px;
+    border-radius: 9px;
+}
+
+.goods>dog {
+    grid-area: dog;
+    background-color: white;
+    width: 78%;
+    border-radius: 1px;
+    height: 151px;
+    width: 145px;
+    border-radius: 9px;
+}
+
+.goods>car {
+    grid-area: car;
+    background-color: white;
+    width: 78%;
+    border-radius: 1px;
+    height: 151px;
+    width: 145px;
+    border-radius: 9px;
+}
+
+.goods>jeep {
+    grid-area: jeep;
+    background-color: white;
+    width: 78%;
+    border-radius: 1px;
+    height: 151px;
+    width: 145px;
+    border-radius: 9px;
+}
+
+.goods>laptop {
+    grid-area: laptop;
+    background-color: white;
+    width: 78%;
+    border-radius: 1px;
+    height: 151px;
+    width: 145px;
+    border-radius: 9px;
+}
+
+.goods>phone {
+    grid-area: phone;
+    background-color: white;
+    width: 78%;
+    border-radius: 1px;
+    height: 151px;
+    width: 145px;
+    border-radius: 9px;
+}
+
+.images {
+    width: 100%;
+    height: 30%;
+}
+
+.write {
+    margin-top: -6vh;
+    padding-bottom: 1.5%;
+    background-color: white;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hov:hover {
+    /* width: 76.8%;
+    height: 60%; */
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .goods {
+        display: grid;
+        width: 375px;
+        height: 556px;
+        margin-left: 2%;
+        padding-left: 0%;
+        padding-right: 0%;
+        background-color: white;
+        padding-top: 5%;
+        margin-top: 3%;
+
+        grid-template-areas:
+            "main header nav  "
+            "cam fish cow  "
+            "footer dog phone"
+            "car jeep laptop ";
+
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+    .goods>main {
+        grid-area: main;
+        background-color: white;
+        height: 85.5px;
+        width: 68.5x;
+        width: 78%;
+    }
+
+    .goods>header {
+        grid-area: header;
+        height: 85.5px;
+        width: 68.5x;
+        background-color: white;
+        width: 78%;
+
+    }
+
+    .goods>nav {
+        grid-area: nav;
+        background-color: white;
+        width: 78%;
+        border-radius: 1px;
+        height: 85.5px;
+        width: 68.5x;
+    }
+
+    .goods>footer {
+        grid-area: footer;
+        background-color: white;
+        width: 78%;
+        border-radius: 1px;
+        height: 85.5px;
+        width: 68.5x;
+        border-radius: 9px;
+    }
+
+    .goods>cam {
+        grid-area: cam;
+        background-color: white;
+        width: 78%;
+        border-radius: 1px;
+        height: 85.5px;
+        width: 68.5x;
+        border-radius: 9px;
+    }
+
+    .goods>fish {
+        grid-area: fish;
+        background-color: white;
+        width: 78%;
+        border-radius: 1px;
+        height: 85.5px;
+        width: 68.5x;
+        border-radius: 9px;
+    }
+
+    .goods>cow {
+        grid-area: cow;
+        background-color: white;
+        width: 78%;
+        border-radius: 1px;
+        height: 85.5px;
+        width: 68.5x;
+        border-radius: 9px;
+    }
+
+    .goods>dog {
+        grid-area: dog;
+        background-color: white;
+        width: 78%;
+        border-radius: 1px;
+        height: 85.5px;
+        width: 68.5x;
+        border-radius: 9px;
+    }
+
+    .goods>car {
+        grid-area: car;
+        background-color: white;
+        width: 78%;
+        border-radius: 1px;
+        height: 85.5px;
+        width: 68.5x;
+        border-radius: 9px;
+    }
+
+    .goods>jeep {
+        grid-area: jeep;
+        background-color: white;
+        width: 78%;
+        border-radius: 1px;
+        height: 85.5px;
+        width: 68.5x;
+        border-radius: 9px;
+    }
+
+    .goods>laptop {
+        grid-area: laptop;
+        background-color: white;
+        width: 78%;
+        border-radius: 1px;
+        height: 85.5px;
+        width: 68.5x;
+        border-radius: 9px;
+    }
+
+    .goods>phone {
+        grid-area: phone;
+        background-color: white;
+        width: 78%;
+        border-radius: 1px;
+        height: 85.5px;
+        width: 68.5x;
+        border-radius: 9px;
+    }
+
+    .hov{
+        margin-bottom: 55%;
+        margin: 15%;
+    }
+
+
+}
