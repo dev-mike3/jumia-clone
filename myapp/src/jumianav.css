@@ -201,11 +201,11 @@ button{
 }
 
  /* set the box for the slides */
- .parent { height: 230px; width: 3px; overflow: visible;}
+ .parent { height: 230px; width: 450px; overflow: hidden;}
  /* set height and width for slide elements */
  .element {float: left; height: 230px; width: 600px; background-color: gray; }
  /* set the width of the slides div and animation. */
- .slides {width: calc(1800px * 4); animation: slideShow 10s ease infinite;}
+ .slides {width: calc(800px * 4); animation: slideShow 10s ease infinite;}
  img {width: 100%; height: 100%;}
  /* creating the animation for the slideshow */
  /* for more slides, users can take percentages accordingly. */
